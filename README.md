@@ -58,9 +58,9 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=rajeevbaniya&show_icons=true&locale=en&layout=compact&theme=dracula" height="150" alt="rajeevbaniya"/></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rajeevbaniya&show_icons=true&locale=en&theme=dracula" height="180" alt="rajeevbaniya" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rajeevbaniya&show_icons=true&locale=en&theme=dracula" height="150" alt="rajeevbaniya" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rajeevbaniya&theme=dracula" height="180" alt="rajeevbaniya" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rajeevbaniya&theme=dracula" height="150" alt="rajeevbaniya" /></p>
 
 
 
