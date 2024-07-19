@@ -56,7 +56,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="30" alt="canva logo"  />
   <img width="12" /> </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=rajeevbaniya&show_icons=true&locale=en&layout=compact&theme=dracula" height="180" alt="rajeevbaniya"/></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=rajeevbaniya&show_icons=true&locale=en&layout=compact&theme=dracula" height="150" alt="rajeevbaniya"/></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rajeevbaniya&show_icons=true&locale=en&theme=dracula" height="180" alt="rajeevbaniya" /></p>
 
