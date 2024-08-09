@@ -10,7 +10,7 @@
 
 - 🌱 I’m currently learning **Java, Javascript, ReactJs etc**
 
-- 👨‍💻 All of my projects are available at [https://github.com/RajeevBaniya](https://github.com/RajeevBaniya)
+- 👨‍💻 Visit my Portfolio Website  [https://baniyarajeev.com.np/](https://baniyarajeev.com.np/)
 
 - 💬 Ask me about my **my adaptability and quick learning skills.**
 
