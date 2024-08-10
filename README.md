@@ -12,9 +12,9 @@
 
 - 👨‍💻 Visit my Portfolio Website  [https://baniyarajeev.com.np/](https://baniyarajeev.com.np/)
 
-- 💬 Ask me about my **my adaptability and quick learning skills.**
+- 💬 Ask me about **my adaptability and quick learning skills.**
 
-- ⚡ Quick Learner **Always eager to learn and adapt in the ever-evolving tech landscape.**
+- ⚡**Always eager to learn and adapt in the ever-evolving tech landscape.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
