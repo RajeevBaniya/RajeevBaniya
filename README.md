@@ -1,6 +1,6 @@
 ![logo](https://github.com/RajeevBaniya/RajeevBaniya/blob/main/Black%20Gradient%20Minimalist%20Corporate%20Business%20Personal%20Profile%20New%20LinkedIn%20Banner.gif)
 <h1 align="center">Hi 👋, I'm Rajeev Baniya</h1>
-<h3 align="center">A passionate Front-end Developer exploring the world of IT field.</h3>
+<h3 align="center">A passionate Front-end Developer, continuously exploring and staying updated with the latest technology.</h3>
 
 <img align="right" alt="coding" width="350" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif">
 
