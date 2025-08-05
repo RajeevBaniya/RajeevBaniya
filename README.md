@@ -8,7 +8,7 @@
 
 <p align="left"> <a href="https://twitter.com/rajeev_rjb" target="blank"><img src="https://img.shields.io/twitter/follow/rajeev_rjb?logo=twitter&style=for-the-badge" alt="rajeev_rjb" /></a> </p>
 
-- 🌱 I’m currently learning about the Web Development & Cloud Platforms etc
+- 🌱 I’m currently learning about the Web Development & Cloud Platforms.
 
 - 👨‍💻 Visit my Portfolio Website  [https://baniyarajeev.com.np/](https://baniyarajeev.com.np/)
 
