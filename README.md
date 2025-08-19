@@ -8,13 +8,13 @@
 
 <p align="left"> <a href="https://twitter.com/rajeev_rjb" target="blank"><img src="https://img.shields.io/twitter/follow/rajeev_rjb?logo=twitter&style=for-the-badge" alt="rajeev_rjb" /></a> </p>
 
-- 🌱 I’m currently focused on full-stack development and cloud platforms.
+- 🌱 I’m currently focused on full-stack development.
 
 - 👨‍💻 Visit my Portfolio Website  [https://baniyarajeev.com.np/](https://baniyarajeev.com.np/)
 
 - 💬 Ask me about **my adaptability and quick learning skills.**
 
-- ⚡**Always eager to learn and adapt in the ever-evolving tech landscape.**
+- ⚡**Always eager to learn and adapt in the ever evolving tech landscape.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
