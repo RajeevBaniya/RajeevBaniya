@@ -57,11 +57,3 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=RajeevBaniya&" alt="RajeevBaniya" /></a> </p>
 
-<p><img align="left" src="https://github-readme-stats-two-orcin-55.vercel.app/api/top-langs?username=rajeevbaniya&show_icons=true&locale=en&layout=compact&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya"/></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats-two-orcin-55.vercel.app/api?username=rajeevbaniya&show_icons=true&locale=en&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya" /></p>
-
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/RajeevBaniya/RajeevBaniya/output/snake.svg" alt="Snake animation" />
