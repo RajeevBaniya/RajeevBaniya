@@ -9,12 +9,9 @@
 <p align="left"> <a href="https://twitter.com/rajeev_rjb" target="blank"><img src="https://img.shields.io/twitter/follow/rajeev_rjb?logo=twitter&style=for-the-badge" alt="rajeev_rjb" /></a> </p>
 
 - 🌱 I’m currently focused on full-stack development.  
-
-- 👨‍💻 Visit my Portfolio Website  [https://baniyarajeev.com.np/](https://baniyarajeev.com.np/)  
-
+- 👨‍💻 Visit my Portfolio Website [https://baniyarajeev.com.np/](https://baniyarajeev.com.np/)  
 - 💬 Ask me about **my adaptability and quick learning skills.**  
-
-- ⚡ **Always eager to learn and adapt in the ever evolving tech landscape.**  
+- ⚡ **Always eager to learn and adapt in the ever evolving tech landscape.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -58,16 +55,11 @@
   <img width="12" /> 
 </p>
 
-<p align="left"> 
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=RajeevBaniya&" alt="RajeevBaniya" />
-  </a> 
-</p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=RajeevBaniya&" alt="RajeevBaniya" /></a> </p>
 
-<p><img align="left" src="https://github-readme-stats-eg7g6x1e-rajeev-baniyas-projects.vercel.app/api/top-langs?username=rajeevbaniya&show_icons=true&locale=en&layout=compact&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya"/></p>
+<p><img align="left" src="https://github-readme-stats-two-orcin-55.vercel.app/api/top-langs?username=rajeevbaniya&show_icons=true&locale=en&layout=compact&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya"/></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats-eg7g6x1e-rajeev-baniyas-projects.vercel.app/api?username=rajeevbaniya&show_icons=true&locale=en&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya" /></p>
-
+<p>&nbsp;<img align="center" src="https://github-readme-stats-two-orcin-55.vercel.app/api?username=rajeevbaniya&show_icons=true&locale=en&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya" /></p>
 
 
 <br clear="both">
