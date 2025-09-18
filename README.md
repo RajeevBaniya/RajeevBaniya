@@ -68,7 +68,7 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats-eg7g6x1e-rajeev-baniyas-projects.vercel.app/api?username=rajeevbaniya&show_icons=true&locale=en&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rajeevbaniya&theme=dracula&hide_border=false" height="150" alt="rajeevbaniya" /></p>
+
 
 <br clear="both">
 
