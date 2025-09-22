@@ -55,10 +55,9 @@
   <img width="12" /> 
 </p>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RajeevBaniya&layout=compact&theme=radical&hide_border=true&langs_count=6" alt="Top Languages" width="380"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=RajeevBaniya&show_icons=true&theme=radical&hide_border=true&count_private=true&line_height=25" alt="GitHub Stats" width="380" height="380"/>
-</div>
+  <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RajeevBaniya&layout=compact&theme=radical&hide_border=true&langs_count=6" alt="Top Languages" width="400" height="250"/></p>
+  <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=RajeevBaniya&show_icons=true&theme=radical&hide_border=true&count_private=true&line_height=25" alt="GitHub Stats" height="380"/></p>
+
 
 
 
