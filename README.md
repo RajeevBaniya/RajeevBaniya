@@ -1,4 +1,4 @@
-![logo](https://github.com/RajeevBaniya/RajeevBaniya/blob/main/Black%20Gradient%20Minimalist%20Corporate%20Business%20Personal%20Profile%20New%20LinkedIn%20Banner.gif)
+![logo](sd)
 <h1 align="center">Hi 👋, I'm Rajeev Baniya</h1>
 <h3 align="center">Skilled in developing responsive web applications, optimizing performance and creating secure authentication systems. Familiar with AI tools and cloud services, while exploring and staying updated with the latest technology.</h3>
 
