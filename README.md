@@ -58,7 +58,7 @@
 <div align="left">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RajeevBaniya&layout=compact&theme=radical" width="45%"/>&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img align="right" alt="coding" width="350" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif">
+<img align="right" alt="coding" width="320" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif">
   <!-- <img src="https://github-readme-stats.vercel.app/api?username=RajeevBaniya&show_icons=true&theme=radical" width="50%" height="70%"/> -->
 </div>
 
