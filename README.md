@@ -56,7 +56,7 @@
 </p>
 
 <div align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RajeevBaniya&layout=compact&theme=radical" width="50%"/>&nbsp;&nbsp;&nbsp;
+  <img src="https://github-readme-rajeev.vercel.app//api/top-langs/?username=RajeevBaniya&layout=compact&theme=radical" width="48%"/>&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img align="right" alt="coding" width="320" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif">
 </div>
