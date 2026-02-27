@@ -55,14 +55,16 @@
   <img width="12" /> 
 </p>
 
+
+[![Rajeev github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=RajeevBaniya&bg_color=000000&color=ffffff&line=ffa047&point=1b03d3&area=true&hide_border=true)](https://github.com/RajeevBaniya)
+
+
 <div align="left">
   <img src="https://github-readme-rajeev.vercel.app//api/top-langs/?username=RajeevBaniya&layout=compact&theme=radical" width="48%"/>&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img align="right" alt="coding" width="320" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif">
 </div>
 
-
-[![Rajeev github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=RajeevBaniya&bg_color=000000&color=ffffff&line=ffa047&point=1b03d3&area=true&hide_border=true)](https://github.com/RajeevBaniya)
 
 
 
