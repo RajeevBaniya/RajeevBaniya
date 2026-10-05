@@ -206,7 +206,11 @@ def frame(w, h, c, body, label):
 def render_stats(user, stats, theme):
     c = THEMES[theme]
     pad = 22
-    tiles = [(v, k) for k, v in stats]
+    # Fixed 2x3 order; a metric that could not be fetched shows an em dash.
+    order = ["Contributions (1y)", "Public repos", "Longest streak",
+             "Current streak", "Total stars", "Followers"]
+    have = dict(stats)
+    tiles = [(have.get(k, "—"), k) for k in order]
     cols = 3
     rows = (len(tiles) + cols - 1) // cols
     # Height follows the tile count, so the card does not leave a dead band when
@@ -219,8 +223,6 @@ def render_stats(user, stats, theme):
     out = [
         f'<text x="{pad}" y="{pad + 14}" font-size="15" font-weight="700" '
         f'fill="{c["title"]}">{esc(user)}</text>',
-        f'<text x="{W - pad}" y="{pad + 14}" font-size="11" text-anchor="end" '
-        f'fill="{c["muted"]}">at a glance</text>',
         f'<line x1="{pad}" y1="{pad + 26}" x2="{W - pad}" y2="{pad + 26}" '
         f'stroke="{c["border"]}"/>',
     ]
