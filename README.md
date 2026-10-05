@@ -12,7 +12,7 @@
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/RajeevBaniya">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=38BDF8&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+building" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=38BDF8&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building" alt="typing banner">
 </a>
 
 <br>
