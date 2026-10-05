@@ -220,6 +220,7 @@ def frame(w, h, c, body, label):
 def render_stats(user, stats, theme):
     c = THEMES[theme]
     pad = 22
+    vp = pad + 8  # vertical padding, roomier than the side padding
     # Fixed 2x3 order; a metric that could not be fetched shows an em dash.
     order = ["Contributions (1y)", "Public repos", "Longest streak",
              "Current streak", "Total stars", "Followers"]
@@ -231,16 +232,19 @@ def render_stats(user, stats, theme):
     # the contribution tiles are unavailable. Measured off the last row's label
     # baseline rather than a nominal row height.
     rh, W = 46, 480
-    H = pad + 52 + (rows - 1) * rh + 17 + pad
+    H = vp + 52 + (rows - 1) * rh + 17 + vp
+    # ponytail: matches the langs card (196); content is centred in the extra height
+    extra, H = (196 - H) / 2, 196
+    vp += extra
     tw = (W - 2 * pad) / cols
 
     out = [
-        f'<text x="{pad}" y="{pad + 14}" font-size="15" font-weight="700" '
+        f'<text x="{pad}" y="{vp + 14}" font-size="15" font-weight="700" '
         f'fill="{c["title"]}">{esc(user)}</text>',
-        f'<line x1="{pad}" y1="{pad + 26}" x2="{W - pad}" y2="{pad + 26}" '
+        f'<line x1="{pad}" y1="{vp + 26}" x2="{W - pad}" y2="{vp + 26}" '
         f'stroke="{c["border"]}"/>',
     ]
-    top = pad + 52
+    top = vp + 52
     for i, (value, label) in enumerate(tiles):
         cx = pad + (i % cols) * tw
         cy = top + (i // cols) * rh
@@ -259,16 +263,17 @@ def render_langs(user, langs, theme):
     """langs: [(name, bytes)] sorted desc. Stacked bar plus a two-column legend."""
     c = THEMES[theme]
     pad, W, bar_h = 22, 480, 8
+    vp = pad + 8  # vertical padding, roomier than the side padding
     total = sum(b for _, b in langs) or 1
     out = [
-        f'<text x="{pad}" y="{pad + 14}" font-size="15" font-weight="700" '
+        f'<text x="{pad}" y="{vp + 14}" font-size="15" font-weight="700" '
         f'fill="{c["title"]}">Most used languages</text>',
-        f'<text x="{W - pad}" y="{pad + 14}" font-size="11" text-anchor="end" '
+        f'<text x="{W - pad}" y="{vp + 14}" font-size="11" text-anchor="end" '
         f'fill="{c["muted"]}">by bytes of code</text>',
-        f'<line x1="{pad}" y1="{pad + 26}" x2="{W - pad}" y2="{pad + 26}" '
+        f'<line x1="{pad}" y1="{vp + 26}" x2="{W - pad}" y2="{vp + 26}" '
         f'stroke="{c["border"]}"/>',
     ]
-    bar_w, y = W - 2 * pad, pad + 40
+    bar_w, y = W - 2 * pad, vp + 40
     out.append(f'<clipPath id="b"><rect x="{pad}" y="{y}" width="{bar_w}" height="{bar_h}" rx="4"/></clipPath>')
     x = float(pad)
     segs = []
@@ -287,7 +292,7 @@ def render_langs(user, langs, theme):
         out.append(f'<text x="{cx + 17:.0f}" y="{cy}" font-size="12" fill="{c["text"]}">{esc(name)}</text>')
         out.append(f'<text x="{cx + colw - 20:.0f}" y="{cy}" font-size="12" text-anchor="end" '
                    f'fill="{c["muted"]}">{100 * b / total:.1f}%</text>')
-    H = y + 30 + ((len(langs) + 1) // 2 - 1) * 22 + 22
+    H = y + 30 + ((len(langs) + 1) // 2 - 1) * 22 + 22 + 8
     return frame(W, H, c, "".join(out), f"{user} most used languages")
 
 
