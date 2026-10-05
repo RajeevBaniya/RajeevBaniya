@@ -36,14 +36,14 @@
 
 <img align="right" alt="coding" width="300" src="assets/developer.gif">
 
-Hi, I'm **Rajeev**, a Full Stack Developer who enjoys working across both backend systems and frontend interfaces.
+I'm **Rajeev**, a full stack developer who learns by building and shipping 🚀. I'd rather put something live than read about it for another week. That's how most of what I know got learned.
 
-- 💻 I mainly work with **JavaScript, TypeScript and Python**: React and Next.js on the frontend, Node.js, Express and FastAPI on the backend.
-- 🗄️ Data lives in **PostgreSQL, MySQL, MongoDB and Redis**, and I ship with **AWS, Docker** and CI/CD.
-- 🛠️ I build my own projects to learn technologies hands-on rather than just reading about them.
-- 🤖 I build AI features end to end: **RAG pipelines, LLM integrations and agent workflows** with LangChain, LangGraph, Hugging Face and vector databases.
-- ⚡ I pick up new tools quickly and move across the stack to solve problems.
-- 🌐 Portfolio: **[baniyarajeev.com.np](https://baniyarajeev.com.np/)**
+On the frontend I work with **React** and **Next.js**. On the backend it's **Node.js**, **Express** and **FastAPI**. Data lives in **PostgreSQL**, **MySQL**, **MongoDB** and **Redis**, depending on the shape of the problem. I ship with **AWS**, **Docker** and **CI/CD**, so the work doesn't stop at localhost.
+
+I also build AI features: **RAG pipelines**, **LLM integrations** and **agent workflows** with **LangChain**, **LangGraph**, **Hugging Face**, **vector databases** and many more. Every new tool goes into a real project.
+
+🌐 Portfolio: **[baniyarajeev.com.np](https://baniyarajeev.com.np/)**
+
 <br>
 
 <div align="center">
