@@ -36,7 +36,13 @@
 
 <img align="right" alt="coding" width="300" src="assets/developer.gif">
 
-<img src="assets/about.svg" alt="About me" width="540">
+I'm **Rajeev**, a Full Stack Developer who learns by building and shipping 🚀. I'd rather put something live than read about it for another week. That's how most of what I know got learned.
+
+On the frontend I work with **React** and **Next.js**. On the backend it's **Node.js**, **Express** and **FastAPI**. Data lives in **PostgreSQL**, **MySQL**, **MongoDB** and **Redis**, depending on the shape of the problem. I ship with **AWS**, **Docker** and **CI/CD**, so the work doesn't stop at localhost.
+
+I also build AI features: **RAG pipelines**, **LLM integrations** and **agent workflows** with **LangChain**, **LangGraph**, **Hugging Face**, **vector databases** and many more. Every new tool goes into my projects.
+
+🌐 Portfolio: **[baniyarajeev.com.np](https://baniyarajeev.com.np/)**
 
 <br>
 
