@@ -349,10 +349,20 @@ def main(argv=None):
     args.out.mkdir(parents=True, exist_ok=True)
 
     user = rest(f"/users/{args.user}", token)
+    # /users/<u>/repos only ever lists public repos. With a PAT that belongs to
+    # this user, /user/repos also lists private ones, so languages and stars
+    # reflect all the work rather than just what is public.
+    listing = f"/users/{args.user}/repos?per_page=100&type=owner"
+    if token:
+        try:
+            if rest("/user", token)["login"].lower() == args.user.lower():
+                listing = "/user/repos?per_page=100&affiliation=owner&visibility=all"
+        except Exception as e:
+            print(f"  token cannot list private repos ({e}); using public only", file=sys.stderr)
     repos = []
     page = 1
     while True:
-        batch = rest(f"/users/{args.user}/repos?per_page=100&page={page}&type=owner", token)
+        batch = rest(f"{listing}&page={page}", token)
         repos += batch
         if len(batch) < 100:
             break

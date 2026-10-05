@@ -32,26 +32,30 @@ import urllib.request
 from pathlib import Path
 
 NAVY = {
-    "grid": "#2F4A80",
-    "spoke": "#0B1735",
+    "grid": "#1B2E55",
+    "spoke": "#1B2E55",
     "label": "#E8F0FF",
     "value": "#7F93B8",
-    "title": "#E8F0FF",
-    "fill": "#8CC4FF",
+    "title": "#38BDF8",
+    "fill": "#38BDF8",
     "stroke": "#38BDF8",
-    "vertex": "#8CC4FF",
-    "bg": "#050B1A",
+    "vertex": "#38BDF8",
+    "bg": "#08112A",
+    "border": "#1B2E55",
+    "glow": "#38BDF8",
 }
 LIGHT = {
     "grid": "#C3D0E6",
-    "spoke": "#E3EAF5",
+    "spoke": "#C3D0E6",
     "label": "#0B1530",
     "value": "#5B6B8A",
-    "title": "#0B1530",
-    "fill": "#3B82F6",
+    "title": "#1D4ED8",
+    "fill": "#1D4ED8",
     "stroke": "#1D4ED8",
-    "vertex": "#1E3A8A",
-    "bg": "none",
+    "vertex": "#1D4ED8",
+    "bg": "#FFFFFF",
+    "border": "#C3D0E6",
+    "glow": "#1D4ED8",
 }
 THEMES = {"dark": NAVY, "light": LIGHT}
 
@@ -197,8 +201,14 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
         f'width="{W}" height="{H}" role="img" '
         f'aria-label="{esc(title) or "radar chart"}" font-family="{FONT}">'
     ]
-    if c["bg"] != "none":
-        parts.append(f'<rect width="100%" height="100%" rx="18" fill="{c["bg"]}"/>')
+    parts.append(
+        f'<defs><filter id="glow" x="-30%" y="-30%" width="160%" height="160%">'
+        f'<feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="{c["glow"]}" '
+        f'flood-opacity=".4"/><feComposite in2="b" operator="in"/>'
+        f'<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>'
+        f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" '
+        f'fill="{c["bg"]}" stroke="{c["border"]}"/>'
+    )
     if title:
         parts.append(
             f'<text x="{W / 2:.1f}" y="{pad + TTL:.0f}" text-anchor="middle" '
@@ -212,14 +222,14 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
         d = " ".join(f"{x:.1f},{y:.1f}" for x, y in ring(r * k / rings, n))
         parts.append(
             f'<polygon points="{d}" fill="none" stroke="{c["grid"]}" '
-            f'stroke-width="1" opacity="{0.35 + 0.5 * k / rings:.2f}"/>'
+            f'stroke-width="1" opacity="{0.6 + 0.4 * k / rings:.2f}"/>'
         )
 
     # spokes
     for x, y in outer:
         parts.append(
             f'<line x1="0" y1="0" x2="{x:.1f}" y2="{y:.1f}" '
-            f'stroke="{c["spoke"]}" stroke-width="1"/>'
+            f'stroke="{c["spoke"]}" stroke-width="1" opacity=".7"/>'
         )
 
     # the data shape. SMIL rather than CSS: animateTransform scales about the
@@ -235,7 +245,7 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
         )
     parts.append(
         f'<polygon points="{d}" fill="{c["fill"]}" fill-opacity="0.22" '
-        f'stroke="{c["stroke"]}" stroke-width="2.5" stroke-linejoin="round"/>'
+        f'stroke="{c["stroke"]}" stroke-width="2.5" stroke-linejoin="round" filter="url(#glow)"/>'
     )
     for x, y in shape:
         parts.append(
