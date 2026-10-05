@@ -10,7 +10,7 @@ from pathlib import Path
 
 A = Path(__file__).resolve().parents[1] / "assets"
 CHART_W, PAD, GAP = 400, 24, 40  # each chart drawn 400 wide, as in the README table
-THEME = {"dark": ("#050B1A", "#142038"), "light": ("#EEF3FB", "#C3D0E6")}
+THEME = {"dark": ("#050B1A", "#142038", "#7F93B8"), "light": ("#EEF3FB", "#C3D0E6", "#8FA3C7")}
 
 
 def load(name):
@@ -19,7 +19,7 @@ def load(name):
     return s, w, h
 
 
-for theme, (bg, line) in THEME.items():
+for theme, (bg, line, border) in THEME.items():
     charts = [load(f"radar-{theme}.svg"), load(f"radar-langs-{theme}.svg")]
     sizes = [(CHART_W, CHART_W * h / w) for _, w, h in charts]
     half = CHART_W + GAP
@@ -32,6 +32,7 @@ for theme, (bg, line) in THEME.items():
         s = re.sub(r"<svg [^>]*>", f'<svg x="{x:.1f}" y="{y:.1f}" width="{cw}" height="{ch:.1f}" '
                    f'viewBox="0 0 {w:g} {h:g}" font-family="{font}">', s, count=1)
         out.append(s.rstrip().removesuffix("</svg>") + "</svg>")
-    out.append(f'<path d="M{half} {PAD}V{H - PAD}" stroke="{line}"/></svg>')
+    out.append(f'<path d="M{half} {PAD}V{H - PAD}" stroke="{line}"/>'
+               f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" fill="none" stroke="{border}" stroke-opacity=".55"/></svg>')
     (A / f"signals-{theme}.svg").write_text("".join(out), encoding="utf-8")
     print(f"wrote signals-{theme}.svg ({W}x{H})")
