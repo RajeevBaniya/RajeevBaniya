@@ -206,8 +206,6 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
         f'<feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="{c["glow"]}" '
         f'flood-opacity=".4"/><feComposite in2="b" operator="in"/>'
         f'<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>'
-        f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" '
-        f'fill="{c["bg"]}" stroke="{c["border"]}"/>'
     )
     if title:
         parts.append(
