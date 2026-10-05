@@ -115,24 +115,38 @@ query($login:String!){
 """
 
 
-def fetch_contributions(user: str, token: str | None):
-    """Return (total, current_streak, longest_streak) or None without a token."""
-    if not token:
-        return None
-    try:
-        data = graphql(CONTRIB_QUERY, {"login": user}, token)
-    except urllib.error.HTTPError as e:
-        print(f"  contributions unavailable (HTTP {e.code})", file=sys.stderr)
-        return None
-    if data.get("errors"):
-        print(f"  contributions unavailable: {data['errors'][0].get('message')}",
-              file=sys.stderr)
-        return None
+def scrape_days(user: str):
+    """Public contribution calendar, no token needed: [(date, count)]."""
+    import re
+    req = urllib.request.Request(f"https://github.com/users/{user}/contributions", headers=UA)
+    html = urllib.request.urlopen(req, timeout=30).read().decode()
+    dates = dict((i, d) for d, i in re.findall(r'data-date="([\d-]+)"[^>]*?id="([^"]+)"', html))
+    days = []
+    for i, n in re.findall(r'<tool-tip[^>]*for="([^"]+)"[^>]*>\s*(No|\d+) contribution', html):
+        if i in dates:
+            days.append((dt.date.fromisoformat(dates[i]), 0 if n == "No" else int(n)))
+    return sorted(days)
 
-    cal = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
-    days = [(dt.date.fromisoformat(d["date"]), d["contributionCount"])
-            for w in cal["weeks"] for d in w["contributionDays"]]
-    days.sort()
+
+def fetch_contributions(user: str, token: str | None):
+    """Return (total, current_streak, longest_streak) or None."""
+    days = None
+    if token:
+        try:
+            data = graphql(CONTRIB_QUERY, {"login": user}, token)
+            cal = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+            days = sorted((dt.date.fromisoformat(d["date"]), d["contributionCount"])
+                          for w in cal["weeks"] for d in w["contributionDays"])
+        except Exception as e:  # HTTP error, GraphQL errors, missing keys
+            print(f"  graphql contributions unavailable ({e}); trying public page", file=sys.stderr)
+    if not days:
+        try:
+            days = scrape_days(user)
+        except Exception as e:
+            print(f"  contributions unavailable ({e})", file=sys.stderr)
+            return None
+    if not days:
+        return None
 
     longest = run = 0
     for _, c in days:
@@ -147,7 +161,7 @@ def fetch_contributions(user: str, token: str | None):
             current += 1
         elif date != days[-1][0]:
             break
-    return cal["totalContributions"], current, longest
+    return sum(c for _, c in days), current, longest
 
 
 # --------------------------------------------------------------------------- #

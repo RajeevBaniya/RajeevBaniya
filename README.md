@@ -48,7 +48,7 @@ Hi, I'm **Rajeev**, a Full Stack Developer who enjoys working across both backen
 
 <div align="center">
 
-<img src="assets/toolkit.svg" alt="Code, stack, data, deploy, AI" width="800">
+<img src="assets/toolkit.svg" alt="Idea, Plan, Build, Ship, Learn" width="800">
 
 </div>
 
