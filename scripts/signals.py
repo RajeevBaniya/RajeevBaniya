@@ -10,7 +10,8 @@ from pathlib import Path
 
 A = Path(__file__).resolve().parents[1] / "assets"
 CHART_W, PAD, GAP = 400, 24, 40  # each chart drawn 400 wide, as in the README table
-THEME = {"dark": ("#050B1A", "#142038", "#7F93B8"), "light": ("#EEF3FB", "#C3D0E6", "#8FA3C7")}
+# border = GitHub's own <hr>/table line colour, so it matches the --- rules between sections
+THEME = {"dark": ("#050B1A", "#142038", "#3D444D"), "light": ("#EEF3FB", "#C3D0E6", "#D1D9E0")}
 
 
 def load(name):
@@ -33,6 +34,6 @@ for theme, (bg, line, border) in THEME.items():
                    f'viewBox="0 0 {w:g} {h:g}" font-family="{font}">', s, count=1)
         out.append(s.rstrip().removesuffix("</svg>") + "</svg>")
     out.append(f'<path d="M{half} {PAD}V{H - PAD}" stroke="{line}"/>'
-               f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" fill="none" stroke="{border}" stroke-opacity=".55"/></svg>')
+               f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" fill="none" stroke="{border}" stroke-width="2"/></svg>')
     (A / f"signals-{theme}.svg").write_text("".join(out), encoding="utf-8")
     print(f"wrote signals-{theme}.svg ({W}x{H})")
