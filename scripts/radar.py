@@ -40,7 +40,7 @@ NAVY = {
     "fill": "#38BDF8",
     "stroke": "#38BDF8",
     "vertex": "#38BDF8",
-    "bg": "#08112A",
+    "bg": "#050B1A",
     "border": "#1B2E55",
     "glow": "#38BDF8",
 }
@@ -53,7 +53,7 @@ LIGHT = {
     "fill": "#1D4ED8",
     "stroke": "#1D4ED8",
     "vertex": "#1D4ED8",
-    "bg": "#FFFFFF",
+    "bg": "#EEF3FB",
     "border": "#C3D0E6",
     "glow": "#1D4ED8",
 }
@@ -206,6 +206,7 @@ def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
         f'<feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="{c["glow"]}" '
         f'flood-opacity=".4"/><feComposite in2="b" operator="in"/>'
         f'<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>'
+        f'<rect width="100%" height="100%" fill="{c["bg"]}"/>'
     )
     if title:
         parts.append(
