@@ -32,8 +32,8 @@ import urllib.request
 from pathlib import Path
 
 NAVY = {
-    "grid": "#1B2E55",
-    "spoke": "#1B2E55",
+    "grid": "#142038",
+    "spoke": "#142038",
     "label": "#E8F0FF",
     "value": "#7F93B8",
     "title": "#38BDF8",
