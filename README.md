@@ -25,7 +25,7 @@
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=38BDF8&labelColor=08112A&label=profile+views" alt="profile views">
+<img src="https://hits.sh/github.com/RajeevBaniya.svg?style=flat&color=38BDF8&labelColor=08112A&label=profile+views" alt="profile views">
 
 </div>
 
