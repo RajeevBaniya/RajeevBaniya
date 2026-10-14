@@ -115,6 +115,6 @@ I also build AI features: **RAG pipelines**, **LLM integrations** and **agent wo
 
 <div align="center">
 
-<sub>Built with love · @RajeevBaniya</sub>
+<sub>@RajeevBaniya</sub>
 
 </div>
