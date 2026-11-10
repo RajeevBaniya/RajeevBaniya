@@ -13,6 +13,7 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps
+from scipy.ndimage import binary_fill_holes
 from scipy.optimize import linear_sum_assignment
 from scipy.spatial.distance import cdist
 
@@ -27,6 +28,7 @@ W, H = 1180, 610
 LOOP_SECONDS = 14.2
 INTRO_SECONDS = 3.2
 TRAVELLER_COUNT = 900
+MAX_DOTS = 18000  # portrait dot budget; keeps each banner SVG under ~0.9 MB
 SEED = 314159
 
 ROWS = [
@@ -49,29 +51,29 @@ ROWS = [
 
 THEMES = {
     "dark": {
-        "bg": "#050B1A",
-        "panel": "#08112A",
-        "panel2": "#0B1735",
-        "line": "#1B2E55",
-        "muted": "#7F93B8",
-        "text": "#E8F0FF",
-        "portrait": "#8CC4FF",
-        "chrome": "#38BDF8",
-        "accent": "#10B981",
-        "shadow": "#01040C",
+        "bg": "#0D1117",
+        "panel": "#161B22",
+        "panel2": "#0D1117",
+        "line": "#30363D",
+        "muted": "#7D8590",
+        "text": "#E6EDF3",
+        "portrait": "#7EE787",
+        "chrome": "#39D353",
+        "accent": "#2DA44E",
+        "shadow": "#010409",
     },
 }
 THEMES["light"] = {
-    "bg": "#EEF3FB",
+    "bg": "#F6F8FA",
     "panel": "#FFFFFF",
-    "panel2": "#E8EFFA",
-    "line": "#C3D0E6",
-    "muted": "#5B6B8A",
-    "text": "#0B1530",
-    "portrait": "#1E3A8A",
-    "chrome": "#1D4ED8",
-    "accent": "#10B981",
-    "shadow": "#A9B7D0",
+    "panel2": "#F6F8FA",
+    "line": "#D0D7DE",
+    "muted": "#656D76",
+    "text": "#1F2328",
+    "portrait": "#116329",
+    "chrome": "#1A7F37",
+    "accent": "#2DA44E",
+    "shadow": "#D0D7DE",
 }
 
 
@@ -147,9 +149,17 @@ def floyd_steinberg(gray: np.ndarray) -> np.ndarray:
 
 def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     """Return sampled x/y banner coordinates from a 300x340 dither grid."""
-    source = Image.open(SOURCE).convert("RGBA")
-    # Tighter head + shoulders crop so face detail fills the VISUAL.MAP frame.
-    crop = source.crop((60, 0, 795, 833)).resize((300, 340), Image.Resampling.LANCZOS)
+    source = Image.open(SOURCE)
+    if "A" not in source.getbands():
+        # Opaque source on a flat black background: everything that is not
+        # near-black (plus enclosed holes like dark hair) is the subject.
+        rgb_src = np.asarray(source.convert("RGB"))
+        mask = binary_fill_holes(rgb_src.max(axis=2) > 18)
+        source = source.convert("RGB")
+        source.putalpha(Image.fromarray(np.uint8(mask * 255), "L"))
+    source = source.convert("RGBA")
+    # Head + shoulders crop at the 300:340 frame aspect, centred on the face.
+    crop = source.crop((135, 0, 1166, 1168)).resize((300, 340), Image.Resampling.LANCZOS)
     rgb = crop.convert("RGB")
     alpha = np.asarray(crop.getchannel("A"), dtype=np.float32) / 255.0
 
@@ -163,27 +173,29 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
         prepared = ImageOps.grayscale(white.convert("RGB"))
         select_lit = False
 
-    # Equalize against the subject only (ignore empty alpha) so lit skin vs dark
-    # hair doesn't crush midtones; then punch local contrast for facial edges.
-    if theme == "dark":
-        mask = Image.fromarray(np.uint8((alpha > 0.08) * 255), "L")
-        prepared = ImageOps.equalize(prepared, mask=mask)
-    else:
-        prepared = ImageOps.autocontrast(prepared, cutoff=1)
+    # Flat-shaded cartoon source: plain autocontrast keeps skin as one clean
+    # tone so the outline features (brows, eyes, mouth, beard) read as gaps.
+    # Equalize was for a photo and turned the skin into speckle.
+    prepared = ImageOps.autocontrast(prepared, cutoff=1)
     prepared = ImageEnhance.Contrast(prepared).enhance(1.35)
     prepared = prepared.filter(ImageFilter.UnsharpMask(radius=2, percent=175, threshold=1))
-    bits = floyd_steinberg(np.asarray(prepared))
-    active = bits if select_lit else ~bits
+    ink = np.asarray(prepared, dtype=np.float32)
+    if not select_lit:
+        ink = 255 - ink
     if theme == "dark":
-        active &= alpha > 0.08
+        ink *= alpha > 0.08
+    # Hit the dot budget by dimming before the dither, not by randomly dropping
+    # dots after it: dithering keeps the structure, random removal is noise.
+    ink *= min(1.0, MAX_DOTS * 255 / max(ink.sum(), 1))
+    active = floyd_steinberg(ink)
 
     # Keep the full 300×340 lattice — skipping 2×2 cells was the soft/blurry look.
     ys, xs = np.where(active)
     if len(xs) == 0:
         return np.zeros((0, 2), dtype=np.float32)
     points = np.column_stack((74 + xs, 154 + ys)).astype(np.float32)
-    if len(points) > 18000:
-        points = points[rng.choice(len(points), 18000, replace=False)]
+    if len(points) > MAX_DOTS:
+        points = points[rng.choice(len(points), MAX_DOTS, replace=False)]
     return points
 
 
@@ -456,7 +468,7 @@ def main() -> None:
         for name, points in sampled.items():
             np.save(DATA / f"{name}-{theme}.npy", points)
         svg = render_svg(theme, portraits[theme], sampled, rng)
-        output = ASSETS / f"banner-{theme}.v9.svg"
+        output = ASSETS / f"banner-{theme}.v10.svg"
         output.write_text(svg, encoding="utf-8")
         byte_size = output.stat().st_size
         print(

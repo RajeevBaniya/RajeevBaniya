@@ -38,8 +38,8 @@ except ImportError:  # pragma: no cover
 
 THEMES = {
     # name: (foreground, dim-foreground, background-or-None)
-    "dark": ("#8CC4FF", "#3B6FB0", None),
-    "light": ("#1E3A8A", "#8FA9E0", None),
+    "dark": ("#39D353", "#006D32", None),
+    "light": ("#116329", "#9BE9A8", None),
 }
 
 ASCII_RAMP = "@%#*+=-:. "  # dark -> light

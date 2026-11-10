@@ -32,14 +32,14 @@ from pathlib import Path
 UA = {"User-Agent": "cards.py"}
 
 NAVY = {
-    "bg": "#08112A", "border": "#1B2E55", "title": "#38BDF8",
-    "text": "#E8F0FF", "muted": "#7F93B8", "value": "#E8F0FF",
-    "accent": "#38BDF8",
+    "bg": "#161B22", "border": "#30363D", "title": "#39D353",
+    "text": "#E6EDF3", "muted": "#7D8590", "value": "#E6EDF3",
+    "accent": "#39D353",
 }
 LIGHT = {
-    "bg": "#FFFFFF", "border": "#C3D0E6", "title": "#1D4ED8",
-    "text": "#0B1530", "muted": "#5B6B8A", "value": "#0B1530",
-    "accent": "#1D4ED8",
+    "bg": "#FFFFFF", "border": "#D0D7DE", "title": "#1A7F37",
+    "text": "#1F2328", "muted": "#656D76", "value": "#1F2328",
+    "accent": "#1A7F37",
 }
 THEMES = {"dark": NAVY, "light": LIGHT}
 
@@ -52,7 +52,7 @@ LANG_COLOR = {
     "Jupyter Notebook": "#DA5B0B", "SCSS": "#c6538c", "Svelte": "#ff3e00",
 }
 
-FALLBACK = ["#38BDF8", "#8CC4FF", "#10B981", "#F59E0B", "#EC4899", "#A78BFA", "#14B8A6", "#F97316"]
+FALLBACK = ["#39D353", "#39D353", "#2DA44E", "#F59E0B", "#EC4899", "#A78BFA", "#14B8A6", "#F97316"]
 FONT = "ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
 
 # Octicon outlines, drawn on a 16x16 grid. These are paths rather than the
@@ -128,8 +128,9 @@ def scrape_days(user: str):
     return sorted(days)
 
 
-def fetch_contributions(user: str, token: str | None):
-    """Return (total, current_streak, longest_streak) or None."""
+def contribution_days(user: str, token: str | None):
+    """Last year of [(date, count)], sorted, or None. GraphQL with a token,
+    otherwise the public contributions page."""
     days = None
     if token:
         try:
@@ -145,9 +146,19 @@ def fetch_contributions(user: str, token: str | None):
         except Exception as e:
             print(f"  contributions unavailable ({e})", file=sys.stderr)
             return None
+    return days or None
+
+
+def fetch_contributions(user: str, token: str | None):
+    """Return (total, current_streak, longest_streak) or None."""
+    days = contribution_days(user, token)
     if not days:
         return None
+    return (sum(c for _, c in days), *streaks(days))
 
+
+def streaks(days):
+    """(current, longest) streak over sorted [(date, count)]."""
     longest = run = 0
     for _, c in days:
         run = run + 1 if c > 0 else 0
@@ -161,7 +172,7 @@ def fetch_contributions(user: str, token: str | None):
             current += 1
         elif date != days[-1][0]:
             break
-    return sum(c for _, c in days), current, longest
+    return current, longest
 
 
 # --------------------------------------------------------------------------- #

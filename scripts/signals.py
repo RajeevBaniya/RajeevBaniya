@@ -11,7 +11,7 @@ from pathlib import Path
 A = Path(__file__).resolve().parents[1] / "assets"
 CHART_W, PAD, GAP = 420, 24, 20  # each chart drawn 400 wide, as in the README table
 # border = GitHub's own <hr>/table line colour, so it matches the --- rules between sections
-THEME = {"dark": ("#050B1A", "#142038", "#3D444D"), "light": ("#EEF3FB", "#C3D0E6", "#D1D9E0")}
+THEME = {"dark": ("#0D1117", "#21262D", "#3D444D"), "light": ("#F6F8FA", "#D0D7DE", "#D1D9E0")}
 
 
 def load(name):
