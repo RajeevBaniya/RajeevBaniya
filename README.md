@@ -15,17 +15,11 @@
   <picture><source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=116329&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=7EE787&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building" alt="typing banner"></picture>
 </a>
 
-<br>
-
-<!-- SOCIALS -->
-<a href="https://linkedin.com/in/rajeev-baniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-EAF5EC?style=for-the-badge&logo=linkedin&logoColor=116329"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=7EE787" alt="LinkedIn"></picture></a>&nbsp;&nbsp;
-<a href="mailto:rjbaniya.contact@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-EAF5EC?style=for-the-badge&logo=gmail&logoColor=116329"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=7EE787" alt="Email"></picture></a>&nbsp;&nbsp;
-<a href="https://github.com/RajeevBaniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-EAF5EC?style=for-the-badge&logo=github&logoColor=116329"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=7EE787" alt="GitHub"></picture></a>&nbsp;&nbsp;
-<a href="https://baniyarajeev.com.np/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-EAF5EC?style=for-the-badge&logo=googlechrome&logoColor=116329"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=7EE787" alt="Portfolio"></picture></a>
-
-<br>
-
 <picture><source media="(prefers-color-scheme: light)" srcset="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=116329&labelColor=161B22&label=profile+views"><img src="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=7EE787&labelColor=161B22&label=profile+views" alt="profile views"></picture>
+
+<br><br>
+
+<img src="assets/toolkit.svg" alt="Idea, Plan, Build, Ship, Learn" width="800">
 
 </div>
 
@@ -45,15 +39,6 @@ I also build AI features: **RAG pipelines**, **LLM integrations** and **agent wo
 🌐 Portfolio: **[baniyarajeev.com.np](https://baniyarajeev.com.np/)**
 
 <br>
-
-<div align="center">
-
-<img src="assets/toolkit.svg" alt="Idea, Plan, Build, Ship, Learn" width="800">
-
-</div>
-
-<br>
-
 
 <div align="center">
 
@@ -114,6 +99,23 @@ I also build AI features: **RAG pipelines**, **LLM integrations** and **agent wo
 ---
 
 <div align="center">
+
+## LET'S CONNECT
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/contact-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/contact-light.svg">
+  <img src="assets/contact-dark.svg" width="880" alt="Let's build something together">
+</picture>
+
+<br><br>
+
+<a href="https://linkedin.com/in/rajeev-baniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-EAF5EC?style=for-the-badge&logo=linkedin&logoColor=116329"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=7EE787" alt="LinkedIn"></picture></a>&nbsp;&nbsp;
+<a href="mailto:rjbaniya.contact@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-EAF5EC?style=for-the-badge&logo=gmail&logoColor=116329"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=7EE787" alt="Email"></picture></a>&nbsp;&nbsp;
+<a href="https://github.com/RajeevBaniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-EAF5EC?style=for-the-badge&logo=github&logoColor=116329"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=7EE787" alt="GitHub"></picture></a>&nbsp;&nbsp;
+<a href="https://baniyarajeev.com.np/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-EAF5EC?style=for-the-badge&logo=googlechrome&logoColor=116329"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=7EE787" alt="Portfolio"></picture></a>
+
+<br><br>
 
 <sub>@RajeevBaniya</sub>
 
