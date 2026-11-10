@@ -29,11 +29,11 @@ BOX = (452, 82, 868, 330)                    # city fits here (x0, y0, x1, y1)
 THEMES = {
     "dark": {"levels": ["#21262D", "#0E4429", "#006D32", "#26A641", "#39D353"],
              "peak": "#A6F4B1", "accent": "#39D353", "text": "#E6EDF3", "muted": "#7D8590",
-             "chip": "#161B22", "line": "#30363D", "plat": ("#161B22", "#1C2128", "#12161C"),
+             "line": "#30363D", "plat": ("#161B22", "#1C2128", "#12161C"),
              "shadow": ("#000000", .55)},
     "light": {"levels": ["#EBEDF0", "#9BE9A8", "#40C463", "#30A14E", "#216E39"],
               "peak": "#2DA44E", "accent": "#1A7F37", "text": "#1F2328", "muted": "#656D76",
-              "chip": "#FFFFFF", "line": "#D0D7DE", "plat": ("#FFFFFF", "#E6EAEF", "#D0D7DE"),
+              "line": "#D0D7DE", "plat": ("#FFFFFF", "#E6EAEF", "#D0D7DE"),
               "shadow": ("#1F2328", .16)},
 }
 
@@ -211,7 +211,7 @@ def render(grid, dates, theme: str, today: dt.date) -> str:
             f'<g opacity="0">{fade(dl)}<animateTransform attributeName="transform" type="translate" '
             f'values="0 8;0 0" begin="{dl:.2f}s" dur=".5s" calcMode="spline" keyTimes="0;1" '
             f'keySplines=".2 .8 .3 1" fill="freeze"/>'
-            f'<rect x="{x:.1f}" y="{y0}" width="{cw}" height="42" rx="8" fill="{t["chip"]}" stroke="{t["line"]}"/>'
+            f'<rect x="{x:.1f}" y="{y0}" width="{cw}" height="42" rx="8" fill="{acc}" fill-opacity=".06" stroke="{acc}" stroke-opacity=".3"/>'
             f'<text x="{x + cw / 2:.1f}" y="{y0 + 20}" text-anchor="middle" font-size="16" font-weight="700" '
             f'fill="{acc if i else t["text"]}">{val}</text>'
             f'<text x="{x + cw / 2:.1f}" y="{y0 + 34}" text-anchor="middle" font-size="8.5" '

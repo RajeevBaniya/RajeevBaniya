@@ -12,20 +12,20 @@
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/RajeevBaniya">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building" alt="typing banner">
+  <picture><source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=1A7F37&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building" alt="typing banner"></picture>
 </a>
 
 <br>
 
 <!-- SOCIALS -->
-<a href="https://linkedin.com/in/rajeev-baniya"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=39D353" alt="LinkedIn"></a>&nbsp;&nbsp;
-<a href="mailto:rjbaniya.contact@gmail.com"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=39D353" alt="Email"></a>&nbsp;&nbsp;
-<a href="https://github.com/RajeevBaniya"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=39D353" alt="GitHub"></a>&nbsp;&nbsp;
-<a href="https://baniyarajeev.com.np/"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=39D353" alt="Portfolio"></a>
+<a href="https://linkedin.com/in/rajeev-baniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-EAF5EC?style=for-the-badge&logo=linkedin&logoColor=1A7F37"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=39D353" alt="LinkedIn"></picture></a>&nbsp;&nbsp;
+<a href="mailto:rjbaniya.contact@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-EAF5EC?style=for-the-badge&logo=gmail&logoColor=1A7F37"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=39D353" alt="Email"></picture></a>&nbsp;&nbsp;
+<a href="https://github.com/RajeevBaniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-EAF5EC?style=for-the-badge&logo=github&logoColor=1A7F37"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=39D353" alt="GitHub"></picture></a>&nbsp;&nbsp;
+<a href="https://baniyarajeev.com.np/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-EAF5EC?style=for-the-badge&logo=googlechrome&logoColor=1A7F37"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=39D353" alt="Portfolio"></picture></a>
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=39D353&labelColor=161B22&label=profile+views" alt="profile views">
+<picture><source media="(prefers-color-scheme: light)" srcset="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=1A7F37&labelColor=161B22&label=profile+views"><img src="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=39D353&labelColor=161B22&label=profile+views" alt="profile views"></picture>
 
 </div>
 
@@ -83,16 +83,16 @@ I also build AI features: **RAG pipelines**, **LLM integrations** and **agent wo
 <table align="center"><tr>
 <td>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-stats-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
-  <img src="assets/card-stats-dark.svg" width="410" alt="GitHub statistics">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-stats-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg?v=2">
+  <img src="assets/card-stats-dark.svg?v=2" width="410" alt="GitHub statistics">
 </picture>
 </td>
 <td>
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-langs-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-langs-light.svg">
-  <img src="assets/card-langs-dark.svg" width="410" alt="most used languages">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-langs-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-langs-light.svg?v=2">
+  <img src="assets/card-langs-dark.svg?v=2" width="410" alt="most used languages">
 </picture>
 </td>
 </tr></table>
