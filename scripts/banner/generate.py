@@ -51,10 +51,10 @@ ROWS = [
 
 THEMES = {
     "dark": {
-        "bg": "#0D1117",
-        "panel": "#161B22",
-        "panel2": "#0D1117",
-        "line": "#30363D",
+        "bg": "#07150D",
+        "panel": "#0E2216",
+        "panel2": "#091A10",
+        "line": "#1F3D2A",
         "muted": "#7D8590",
         "text": "#E6EDF3",
         "portrait": "#7EE787",
@@ -64,10 +64,10 @@ THEMES = {
     },
 }
 THEMES["light"] = {
-    "bg": "#F6F8FA",
-    "panel": "#FFFFFF",
-    "panel2": "#F6F8FA",
-    "line": "#D0D7DE",
+    "bg": "#E6F4EA",
+    "panel": "#F5FBF6",
+    "panel2": "#EAF6ED",
+    "line": "#C3E3CB",
     "muted": "#656D76",
     "text": "#1F2328",
     "portrait": "#116329",
@@ -468,7 +468,7 @@ def main() -> None:
         for name, points in sampled.items():
             np.save(DATA / f"{name}-{theme}.npy", points)
         svg = render_svg(theme, portraits[theme], sampled, rng)
-        output = ASSETS / f"banner-{theme}.v10.svg"
+        output = ASSETS / f"banner-{theme}.v11.svg"
         output.write_text(svg, encoding="utf-8")
         byte_size = output.stat().st_size
         print(

@@ -32,12 +32,12 @@ from pathlib import Path
 UA = {"User-Agent": "cards.py"}
 
 NAVY = {
-    "bg": "#161B22", "border": "#30363D", "title": "#39D353",
+    "bg": "#0E2216", "border": "#1F3D2A", "title": "#39D353",
     "text": "#E6EDF3", "muted": "#7D8590", "value": "#E6EDF3",
     "accent": "#39D353",
 }
 LIGHT = {
-    "bg": "#FFFFFF", "border": "#D0D7DE", "title": "#1A7F37",
+    "bg": "#F5FBF6", "border": "#C3E3CB", "title": "#1A7F37",
     "text": "#1F2328", "muted": "#656D76", "value": "#1F2328",
     "accent": "#1A7F37",
 }
