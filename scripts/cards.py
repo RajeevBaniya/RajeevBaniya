@@ -32,7 +32,7 @@ from pathlib import Path
 UA = {"User-Agent": "cards.py"}
 
 NAVY = {
-    "bg": "#0E2216", "border": "#1F3D2A", "title": "#39D353",
+    "bg": "#16382A", "border": "#2C5A40", "title": "#39D353",
     "text": "#E6EDF3", "muted": "#7D8590", "value": "#E6EDF3",
     "accent": "#39D353",
 }
