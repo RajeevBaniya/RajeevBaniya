@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="900" height="150">
 <title>Idea, plan, build, ship, learn</title>
-<style>:root{--ac:#1A7F37;--mu:#656D76;--ln:#D0D7DE;--gl:.18}
-@media (prefers-color-scheme:dark){:root{--ac:#39D353;--mu:#7D8590;--ln:#30363D;--gl:.35}}
+<style>:root{--ac:#116329;--mu:#656D76;--ln:#D0D7DE;--gl:.18}
+@media (prefers-color-scheme:dark){:root{--ac:#7EE787;--mu:#7D8590;--ln:#30363D;--gl:.35}}
 .ic{fill:none;stroke:var(--mu);stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
 .ic circle{fill:currentColor;stroke:none}
 .cn{stroke:var(--ln);stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1 7}

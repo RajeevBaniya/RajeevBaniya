@@ -12,20 +12,20 @@
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/RajeevBaniya">
-  <picture><source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=1A7F37&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building" alt="typing banner"></picture>
+  <picture><source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=116329&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=7EE787&center=true&vCenter=true&width=880&lines=Rajeev+Baniya+-+Full+Stack+Developer;Backend+%2F+Frontend+%2F+AI+Integration;Learning+by+Building" alt="typing banner"></picture>
 </a>
 
 <br>
 
 <!-- SOCIALS -->
-<a href="https://linkedin.com/in/rajeev-baniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-EAF5EC?style=for-the-badge&logo=linkedin&logoColor=1A7F37"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=39D353" alt="LinkedIn"></picture></a>&nbsp;&nbsp;
-<a href="mailto:rjbaniya.contact@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-EAF5EC?style=for-the-badge&logo=gmail&logoColor=1A7F37"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=39D353" alt="Email"></picture></a>&nbsp;&nbsp;
-<a href="https://github.com/RajeevBaniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-EAF5EC?style=for-the-badge&logo=github&logoColor=1A7F37"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=39D353" alt="GitHub"></picture></a>&nbsp;&nbsp;
-<a href="https://baniyarajeev.com.np/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-EAF5EC?style=for-the-badge&logo=googlechrome&logoColor=1A7F37"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=39D353" alt="Portfolio"></picture></a>
+<a href="https://linkedin.com/in/rajeev-baniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-EAF5EC?style=for-the-badge&logo=linkedin&logoColor=116329"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=7EE787" alt="LinkedIn"></picture></a>&nbsp;&nbsp;
+<a href="mailto:rjbaniya.contact@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-EAF5EC?style=for-the-badge&logo=gmail&logoColor=116329"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=7EE787" alt="Email"></picture></a>&nbsp;&nbsp;
+<a href="https://github.com/RajeevBaniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-EAF5EC?style=for-the-badge&logo=github&logoColor=116329"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=7EE787" alt="GitHub"></picture></a>&nbsp;&nbsp;
+<a href="https://baniyarajeev.com.np/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-EAF5EC?style=for-the-badge&logo=googlechrome&logoColor=116329"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=7EE787" alt="Portfolio"></picture></a>
 
 <br>
 
-<picture><source media="(prefers-color-scheme: light)" srcset="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=1A7F37&labelColor=161B22&label=profile+views"><img src="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=39D353&labelColor=161B22&label=profile+views" alt="profile views"></picture>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=116329&labelColor=161B22&label=profile+views"><img src="https://komarev.com/ghpvc/?username=RajeevBaniya&style=flat&color=7EE787&labelColor=161B22&label=profile+views" alt="profile views"></picture>
 
 </div>
 
