@@ -42,6 +42,27 @@ I also build AI features: **RAG pipelines**, **LLM integrations** and **agent wo
 
 <div align="center">
 
+## LET'S CONNECT
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/contact-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/contact-light.svg">
+  <img src="assets/contact-dark.svg" width="880" alt="Let's build something together">
+</picture>
+
+<br><br>
+
+<a href="https://linkedin.com/in/rajeev-baniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-EAF5EC?style=for-the-badge&logo=linkedin&logoColor=116329"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=7EE787" alt="LinkedIn"></picture></a>&nbsp;&nbsp;
+<a href="mailto:rjbaniya.contact@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-EAF5EC?style=for-the-badge&logo=gmail&logoColor=116329"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=7EE787" alt="Email"></picture></a>&nbsp;&nbsp;
+<a href="https://github.com/RajeevBaniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-EAF5EC?style=for-the-badge&logo=github&logoColor=116329"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=7EE787" alt="GitHub"></picture></a>&nbsp;&nbsp;
+<a href="https://baniyarajeev.com.np/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-EAF5EC?style=for-the-badge&logo=googlechrome&logoColor=116329"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=7EE787" alt="Portfolio"></picture></a>
+
+</div>
+
+---
+
+<div align="center">
+
 ## SIGNALS
 
 <!-- Left: skill radar. Right: 3D activity skyline of the last 26 weeks, refreshed hourly
@@ -99,23 +120,6 @@ I also build AI features: **RAG pipelines**, **LLM integrations** and **agent wo
 ---
 
 <div align="center">
-
-## LET'S CONNECT
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/contact-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/contact-light.svg">
-  <img src="assets/contact-dark.svg" width="880" alt="Let's build something together">
-</picture>
-
-<br><br>
-
-<a href="https://linkedin.com/in/rajeev-baniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-EAF5EC?style=for-the-badge&logo=linkedin&logoColor=116329"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=7EE787" alt="LinkedIn"></picture></a>&nbsp;&nbsp;
-<a href="mailto:rjbaniya.contact@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-EAF5EC?style=for-the-badge&logo=gmail&logoColor=116329"><img src="https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=7EE787" alt="Email"></picture></a>&nbsp;&nbsp;
-<a href="https://github.com/RajeevBaniya"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-EAF5EC?style=for-the-badge&logo=github&logoColor=116329"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=7EE787" alt="GitHub"></picture></a>&nbsp;&nbsp;
-<a href="https://baniyarajeev.com.np/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-EAF5EC?style=for-the-badge&logo=googlechrome&logoColor=116329"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=7EE787" alt="Portfolio"></picture></a>
-
-<br><br>
 
 <sub>@RajeevBaniya</sub>
 
