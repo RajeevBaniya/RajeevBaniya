@@ -19,7 +19,7 @@
 
 <br><br>
 
-<img src="assets/toolkit.svg" alt="Idea, Plan, Build, Ship, Learn" width="800">
+<img src="assets/toolkit.svg?v=3" alt="Idea, Plan, Build, Ship, Learn" width="800">
 
 </div>
 
