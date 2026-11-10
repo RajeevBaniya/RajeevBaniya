@@ -51,8 +51,10 @@ ROWS = [
 
 THEMES = {
     "dark": {
-        "bg": "#1E4A33",
-        "panel": "#245A3E",
+        "bg": "#0D1117",
+        "panel": "#161B22",
+        "sheen": "#FFFFFF",
+        "glass": (.07, .035, .015, .03),   # sheen, mid, end, outer tint
         "panel2": "#0D1117",
         "line": "#30363D",
         "muted": "#7D8590",
@@ -64,8 +66,10 @@ THEMES = {
     },
 }
 THEMES["light"] = {
-    "bg": "#E6F4EA",
-    "panel": "#F5FBF6",
+    "bg": "#F6F8FA",
+    "panel": "#FFFFFF",
+    "sheen": "#FFFFFF",
+    "glass": (.6, .05, .02, .035),
     "panel2": "#F6F8FA",
     "line": "#D0D7DE",
     "muted": "#656D76",
@@ -296,10 +300,21 @@ def render_svg(
         'flood-opacity=".35"/><feComposite in2="b" operator="in"/>'
         '<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
         '<clipPath id="visualClip"><rect x="49" y="124" width="390" height="414" rx="3"/></clipPath>',
+        # Frosted-glass frame: a barely-there green tint over the page, a soft
+        # sheen from the top-left and a thin glowing edge.
+        '<linearGradient id="glassFill" x1="0" y1="0" x2="1" y2="1">'
+        f'<stop offset="0" stop-color="{t["sheen"]}" stop-opacity="{t["glass"][0]}"/>'
+        f'<stop offset=".45" stop-color="{t["chrome"]}" stop-opacity="{t["glass"][1]}"/>'
+        f'<stop offset="1" stop-color="{t["chrome"]}" stop-opacity="{t["glass"][2]}"/></linearGradient>',
+        '<linearGradient id="glassEdge" x1="0" y1="0" x2="1" y2="1">'
+        f'<stop offset="0" stop-color="{t["chrome"]}" stop-opacity=".45"/>'
+        f'<stop offset=".5" stop-color="{t["chrome"]}" stop-opacity=".12"/>'
+        f'<stop offset="1" stop-color="{t["chrome"]}" stop-opacity=".3"/></linearGradient>',
         "</defs>",
-        f'<rect width="{W}" height="{H}" rx="18" fill="{t["bg"]}"/>',
-        f'<rect x="13" y="13" width="1154" height="584" rx="13" fill="{t["panel"]}" '
-        f'stroke="{t["line"]}" filter="url(#shadow)"/>',
+        f'<rect width="{W}" height="{H}" rx="18" fill="{t["chrome"]}" fill-opacity="{t["glass"][3]}"/>',
+        f'<rect x="13" y="13" width="1154" height="584" rx="13" fill="url(#glassFill)" '
+        f'stroke="url(#glassEdge)" stroke-width="1.2" filter="url(#shadow)"/>',
+        f'<path d="M26 14H1154" stroke="{t["sheen"]}" stroke-opacity=".18" stroke-linecap="round"/>',
         f'<path d="M13 62H1167" stroke="{t["line"]}"/>',
         '<circle cx="38" cy="38" r="6" fill="#FF5F57"/>'
         '<circle cx="59" cy="38" r="6" fill="#FEBC2E"/>'
@@ -468,7 +483,7 @@ def main() -> None:
         for name, points in sampled.items():
             np.save(DATA / f"{name}-{theme}.npy", points)
         svg = render_svg(theme, portraits[theme], sampled, rng)
-        output = ASSETS / f"banner-{theme}.v13.svg"
+        output = ASSETS / f"banner-{theme}.v14.svg"
         output.write_text(svg, encoding="utf-8")
         byte_size = output.stat().st_size
         print(

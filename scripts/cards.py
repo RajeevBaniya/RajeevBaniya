@@ -32,12 +32,12 @@ from pathlib import Path
 UA = {"User-Agent": "cards.py"}
 
 NAVY = {
-    "bg": "#245A3E", "border": "#2F6B4A", "title": "#39D353",
-    "text": "#E6EDF3", "muted": "#A5BDAE", "value": "#E6EDF3",
+    "bg": "#161B22", "border": "#30363D", "title": "#39D353", "glass": (.07, .035, .015),
+    "text": "#E6EDF3", "muted": "#7D8590", "value": "#E6EDF3",
     "accent": "#39D353",
 }
 LIGHT = {
-    "bg": "#F5FBF6", "border": "#C3E3CB", "title": "#1A7F37",
+    "bg": "#FFFFFF", "border": "#D0D7DE", "title": "#1A7F37", "glass": (.6, .05, .02),
     "text": "#1F2328", "muted": "#656D76", "value": "#1F2328",
     "accent": "#1A7F37",
 }
@@ -217,8 +217,17 @@ def frame(w, h, c, body, label):
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" '
         f'width="{w}" height="{h}" role="img" aria-label="{esc(label)}" '
         f'font-family="{FONT}">'
+        # Frosted glass: faint green tint, top-left sheen, thin glowing edge.
+        f'<defs><linearGradient id="gf" x1="0" y1="0" x2="1" y2="1">'
+        f'<stop offset="0" stop-color="#FFFFFF" stop-opacity="{c["glass"][0]}"/>'
+        f'<stop offset=".5" stop-color="{c["accent"]}" stop-opacity="{c["glass"][1]}"/>'
+        f'<stop offset="1" stop-color="{c["accent"]}" stop-opacity="{c["glass"][2]}"/></linearGradient>'
+        f'<linearGradient id="ge" x1="0" y1="0" x2="1" y2="1">'
+        f'<stop offset="0" stop-color="{c["accent"]}" stop-opacity=".45"/>'
+        f'<stop offset=".5" stop-color="{c["accent"]}" stop-opacity=".12"/>'
+        f'<stop offset="1" stop-color="{c["accent"]}" stop-opacity=".3"/></linearGradient></defs>'
         f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="10" '
-        f'fill="{c["bg"]}" stroke="{c["border"]}"/>'
+        f'fill="url(#gf)" stroke="url(#ge)"/>'
         f"{body}</svg>"
     )
 
